@@ -9,8 +9,8 @@
 import UIKit
 
 //MARK: - UINavigationBar
-extension UINavigationBar {
-    func setGradientBackground(colors: [UIColor]) {
+public extension UINavigationBar {
+    public  func setGradientBackground(colors: [UIColor]) {
         var updatedFrame = bounds
         updatedFrame.size.height += 20
         let gradientLayer = CAGradientLayer(frame: updatedFrame, colors: colors)
@@ -19,9 +19,9 @@ extension UINavigationBar {
 }
 
 //MARK: - UINavigationController
-extension UINavigationController {
+public  extension UINavigationController {
     
-    func setNavigationControllerGradientScheme() {
+    public func setNavigationControllerGradientScheme() {
         self.navigationBar.setGradientBackground(colors: UIColor.Solutio.gradientGreenBackgroundColor)
         self.navigationBar.tintColor = .white
         self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]

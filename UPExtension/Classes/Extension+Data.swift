@@ -10,9 +10,9 @@ import UIKit
 
 
 //MARK: - Data
-extension Data {
+public extension Data {
     
-    func toJSON() -> Any? {
+    public func toJSON() -> Any? {
         do {
             return try JSONSerialization.jsonObject(with: self, options: .allowFragments)
         } catch {
@@ -20,7 +20,7 @@ extension Data {
         }
     }
     
-    func toDictionary() -> [String: Any]? {
+    public func toDictionary() -> [String: Any]? {
         do {
             return try JSONSerialization.jsonObject(with: self, options: []) as? [String: Any]
         } catch {

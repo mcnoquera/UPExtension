@@ -327,14 +327,14 @@
 		AD81E3B1B8900A13D8DCEFC7FBC89C51 /* BeIdenticalTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeIdenticalTo.swift; path = Sources/Nimble/Matchers/BeIdenticalTo.swift; sourceTree = "<group>"; };
 		AE95FD22040B2F419CA820D80377A6FA /* Callsite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Callsite.swift; path = Sources/Quick/Callsite.swift; sourceTree = "<group>"; };
 		AF56BECC3FEF842A4B13280D5BC5FE11 /* Closures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Closures.swift; path = Sources/Quick/Hooks/Closures.swift; sourceTree = "<group>"; };
-		AFCA3B531F78AF0F00686B5C /* Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Default.swift; sourceTree = "<group>"; };
-		AFCA3B541F78AF0F00686B5C /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
-		AFCA3B551F78AF0F00686B5C /* Extension+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Data.swift"; sourceTree = "<group>"; };
-		AFCA3B561F78AF0F00686B5C /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
-		AFCA3B571F78AF0F00686B5C /* Extension+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Navigation.swift"; sourceTree = "<group>"; };
-		AFCA3B581F78AF0F00686B5C /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
-		AFCA3B591F78AF0F00686B5C /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
-		AFCA3B5A1F78AF0F00686B5C /* SwiftHEXColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftHEXColors.swift; sourceTree = "<group>"; };
+		AFCA3B5B1F78C99E00686B5C /* Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Default.swift; path = UPExtension/Classes/Default.swift; sourceTree = "<group>"; };
+		AFCA3B5C1F78C99E00686B5C /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+Color.swift"; path = "UPExtension/Classes/Extension+Color.swift"; sourceTree = "<group>"; };
+		AFCA3B5D1F78C99E00686B5C /* Extension+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+Data.swift"; path = "UPExtension/Classes/Extension+Data.swift"; sourceTree = "<group>"; };
+		AFCA3B5E1F78C99E00686B5C /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+Date.swift"; path = "UPExtension/Classes/Extension+Date.swift"; sourceTree = "<group>"; };
+		AFCA3B5F1F78C99E00686B5C /* Extension+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+Navigation.swift"; path = "UPExtension/Classes/Extension+Navigation.swift"; sourceTree = "<group>"; };
+		AFCA3B601F78C99E00686B5C /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+String.swift"; path = "UPExtension/Classes/Extension+String.swift"; sourceTree = "<group>"; };
+		AFCA3B611F78C99E00686B5C /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+UIView.swift"; path = "UPExtension/Classes/Extension+UIView.swift"; sourceTree = "<group>"; };
+		AFCA3B621F78C99E00686B5C /* SwiftHEXColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftHEXColors.swift; path = UPExtension/Classes/SwiftHEXColors.swift; sourceTree = "<group>"; };
 		B0BDDFCA6435FEF025A8AA771C018452 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		B0E67650E7214DCE853B31771FB5FEF5 /* AssertionRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionRecorder.swift; path = Sources/Nimble/Adapters/AssertionRecorder.swift; sourceTree = "<group>"; };
 		B1906C2EEC74D3F756324E96F610273D /* URL+FileName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+FileName.swift"; path = "Sources/Quick/URL+FileName.swift"; sourceTree = "<group>"; };
@@ -589,14 +589,14 @@
 		9579D766917C4EC129A47CDB5492F87E /* UPExtension */ = {
 			isa = PBXGroup;
 			children = (
-				AFCA3B531F78AF0F00686B5C /* Default.swift */,
-				AFCA3B541F78AF0F00686B5C /* Extension+Color.swift */,
-				AFCA3B551F78AF0F00686B5C /* Extension+Data.swift */,
-				AFCA3B561F78AF0F00686B5C /* Extension+Date.swift */,
-				AFCA3B571F78AF0F00686B5C /* Extension+Navigation.swift */,
-				AFCA3B581F78AF0F00686B5C /* Extension+String.swift */,
-				AFCA3B591F78AF0F00686B5C /* Extension+UIView.swift */,
-				AFCA3B5A1F78AF0F00686B5C /* SwiftHEXColors.swift */,
+				AFCA3B5B1F78C99E00686B5C /* Default.swift */,
+				AFCA3B5C1F78C99E00686B5C /* Extension+Color.swift */,
+				AFCA3B5D1F78C99E00686B5C /* Extension+Data.swift */,
+				AFCA3B5E1F78C99E00686B5C /* Extension+Date.swift */,
+				AFCA3B5F1F78C99E00686B5C /* Extension+Navigation.swift */,
+				AFCA3B601F78C99E00686B5C /* Extension+String.swift */,
+				AFCA3B611F78C99E00686B5C /* Extension+UIView.swift */,
+				AFCA3B621F78C99E00686B5C /* SwiftHEXColors.swift */,
 				E3907DC21A9CDEE6CE131AFE77F1177E /* Support Files */,
 			);
 			name = UPExtension;

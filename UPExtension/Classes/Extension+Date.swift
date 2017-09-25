@@ -9,33 +9,29 @@
 import UIKit
 
 //MARK: - Date
-extension Date {
-    var iso8601: String {
+public extension Date {
+    open var iso8601: String {
         return Formatter.iso8601.string(from: self)
     }
     
-    var formattedDate: String? {
+    open var formattedDate: String? {
         let formatter = Formatter.def
         formatter.dateFormat = "dd MMMM YYYY"
         return formatter.string(from: self)
     }
     
-    var addOneDate: Date {
+    open var addOneDate: Date {
         return Calendar.current.date(byAdding: .day, value: 1, to: self)!
     }
 }
 
-extension Calendar {
-    static let iso8601 = Calendar(identifier: .iso8601)
-    
-    
-    
+public extension Calendar {
+    public static let iso8601 = Calendar(identifier: .iso8601)
 }
 
-
 //MARK: - Formatter
-extension Formatter {
-    static let iso8601: DateFormatter = {
+public extension Formatter {
+    public static let iso8601: DateFormatter = {
         let formatter = DateFormatter()
         formatter.calendar = Calendar(identifier: .iso8601)
         formatter.locale = Locale(identifier: "en_US_POSIX")
@@ -44,7 +40,7 @@ extension Formatter {
         return formatter
     }()
     
-    static let def: DateFormatter = {
+    public static let def: DateFormatter = {
         let formatter = DateFormatter()
         formatter.calendar = Calendar.current
         formatter.locale = Calendar.current.locale

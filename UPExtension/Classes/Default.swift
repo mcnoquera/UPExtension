@@ -8,15 +8,15 @@
 
 import UIKit
 
-class Default: NSObject {
+public class Default: NSObject {
     
-    static let defaults = UserDefaults.standard
+    public static let defaults = UserDefaults.standard
     
     //MARK: - Save object
     /*
      * Save object with specific key in user defaults
      */
-    static func saveObject(_ id: Any, key:String) {
+    public static func saveObject(_ id: Any, key:String) {
         
         defaults.set(NSKeyedArchiver.archivedData(withRootObject: id), forKey: key)
         defaults.synchronize()
@@ -26,23 +26,23 @@ class Default: NSObject {
     /*
      * Save object with specific key in user defaults
      */
-    static func saveString(_ id: String, key:String) {
+    public static func saveString(_ id: String, key:String) {
         defaults.set(id, forKey: key)
         defaults.synchronize()
         
     }
     
-    static func removeString(_ key: String) {
+    public static func removeString(_ key: String) {
         defaults.removeObject(forKey: key)
         defaults.synchronize()
     }
     
-    static func removeObject(_ key: String) {
+    public static func removeObject(_ key: String) {
         defaults.removeObject(forKey: key)
         defaults.synchronize()
     }
 
-    static func saveObject(_ key: String, object: Any?) {
+    public static func saveObject(_ key: String, object: Any?) {
         defaults.set(object, forKey: key)
         defaults.synchronize()
     }
@@ -51,7 +51,7 @@ class Default: NSObject {
     /*
      * Returns class for specific key in user defaults
      */
-    static func getClass(_ key: String) -> Any? {
+    public static func getClass(_ key: String) -> Any? {
         if let user = defaults.object(forKey: key) {
             let unarchive = NSKeyedUnarchiver.unarchiveObject(with: user as! Data)
             return unarchive as AnyObject
@@ -64,7 +64,7 @@ class Default: NSObject {
     /*
      * Returns class for specific key in user defaults
      */
-    static func getObject(_ key: String) -> Any? {
+    public static func getObject(_ key: String) -> Any? {
         if let user = defaults.object(forKey: key) {
             return user
         } else {
@@ -76,14 +76,14 @@ class Default: NSObject {
     /*
      * Returns string for specific key in user defaults
      */
-    static func getString(key: String) -> String? {
+    public static func getString(key: String) -> String? {
         if let string = defaults.string(forKey: key) {
             return string
         }
         return nil
     }
     
-    static func clear() {
+    public static func clear() {
         let appDomain = Bundle.main.bundleIdentifier!
         UserDefaults.standard.removePersistentDomain(forName: appDomain)
     }
