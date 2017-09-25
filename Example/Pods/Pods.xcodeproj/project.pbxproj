@@ -333,6 +333,7 @@
 		AFCA3B5F1F78C99E00686B5C /* Extension+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+Navigation.swift"; path = "UPExtension/Classes/Extension+Navigation.swift"; sourceTree = "<group>"; };
 		AFCA3B601F78C99E00686B5C /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+String.swift"; path = "UPExtension/Classes/Extension+String.swift"; sourceTree = "<group>"; };
 		AFCA3B611F78C99E00686B5C /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+UIView.swift"; path = "UPExtension/Classes/Extension+UIView.swift"; sourceTree = "<group>"; };
+		AFCA3B651F78E71A00686B5C /* Extension+CAGradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+CAGradientLayer.swift"; path = "UPExtension/Classes/Extension+CAGradientLayer.swift"; sourceTree = "<group>"; };
 		B0BDDFCA6435FEF025A8AA771C018452 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		B0E67650E7214DCE853B31771FB5FEF5 /* AssertionRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionRecorder.swift; path = Sources/Nimble/Adapters/AssertionRecorder.swift; sourceTree = "<group>"; };
 		B1906C2EEC74D3F756324E96F610273D /* URL+FileName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+FileName.swift"; path = "Sources/Quick/URL+FileName.swift"; sourceTree = "<group>"; };
@@ -593,6 +594,7 @@
 				AFCA3B5F1F78C99E00686B5C /* Extension+Navigation.swift */,
 				AFCA3B601F78C99E00686B5C /* Extension+String.swift */,
 				AFCA3B611F78C99E00686B5C /* Extension+UIView.swift */,
+				AFCA3B651F78E71A00686B5C /* Extension+CAGradientLayer.swift */,
 				E3907DC21A9CDEE6CE131AFE77F1177E /* Support Files */,
 			);
 			name = UPExtension;
