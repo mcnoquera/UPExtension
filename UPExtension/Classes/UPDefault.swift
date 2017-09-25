@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class Default: NSObject {
+public class UPDefault: NSObject {
     
     public static let defaults = UserDefaults.standard
     

@@ -31,7 +31,7 @@ public  extension String {
     }
     
     public var dateFromISO8601: Date? {
-        return Formatter.iso8601.date(from: self)   // "Mar 22, 2017, 10:22 AM"
+        return Formatter.iso8601.date(from: self)
     }
     
 }
