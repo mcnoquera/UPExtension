@@ -10,17 +10,17 @@ import UIKit
 
 //MARK: - Date
 public extension Date {
-    open var iso8601: String {
+    public var iso8601: String {
         return Formatter.iso8601.string(from: self)
     }
     
-    open var formattedDate: String? {
+    public var formattedDate: String? {
         let formatter = Formatter.def
         formatter.dateFormat = "dd MMMM YYYY"
         return formatter.string(from: self)
     }
     
-    open var addOneDate: Date {
+    public var addOneDate: Date {
         return Calendar.current.date(byAdding: .day, value: 1, to: self)!
     }
 }
