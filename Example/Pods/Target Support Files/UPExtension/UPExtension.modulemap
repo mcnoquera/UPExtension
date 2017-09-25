@@ -1,0 +1,6 @@
+framework module UPExtension {
+  umbrella header "UPExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}
