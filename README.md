@@ -27,3 +27,4 @@ mcnoquera, mark.noquera@upraxis.com
 ## License
 
 UPExtension is available under the MIT license. See the LICENSE file for more info.
+# UPExtension
