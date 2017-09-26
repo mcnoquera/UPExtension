@@ -29,4 +29,13 @@ public extension Data {
         return nil
     }
     
+    public func toArrayDictionary() -> [[String: Any]]? {
+        do {
+            return try JSONSerialization.jsonObject(with: self, options: []) as? [[String: Any]]
+        } catch {
+            print(error.localizedDescription)
+        }
+        return nil
+    }
+    
 }
