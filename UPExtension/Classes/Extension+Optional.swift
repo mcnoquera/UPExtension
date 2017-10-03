@@ -6,6 +6,8 @@
 //
 //
 
+import Foundation
+
 public extension Optional {
     public func or<T>(defaultValue: T!) -> T! {
         
@@ -17,11 +19,11 @@ public extension Optional {
     }
 }
 
-protocol Defaultable {
-    static var defaultValue: Self { get }
+internal protocol Defaultable {
+   static var defaultValue: Self { get }
 }
 
-extension Optional where Wrapped: Defaultable {
+internal extension Optional where Wrapped: Defaultable {
     var unwrappedValue: Wrapped { return self ?? Wrapped.defaultValue }
 }
 
