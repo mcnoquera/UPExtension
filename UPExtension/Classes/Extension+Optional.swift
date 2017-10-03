@@ -6,8 +6,8 @@
 //
 //
 
-extension Optional {
-    func or<T>(defaultValue: T!) -> T! {
+public extension Optional {
+    public func or<T>(defaultValue: T!) -> T! {
         
         guard let value = self else {
             return defaultValue
