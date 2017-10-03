@@ -327,6 +327,7 @@
 		AD81E3B1B8900A13D8DCEFC7FBC89C51 /* BeIdenticalTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeIdenticalTo.swift; path = Sources/Nimble/Matchers/BeIdenticalTo.swift; sourceTree = "<group>"; };
 		AE95FD22040B2F419CA820D80377A6FA /* Callsite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Callsite.swift; path = Sources/Quick/Callsite.swift; sourceTree = "<group>"; };
 		AF56BECC3FEF842A4B13280D5BC5FE11 /* Closures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Closures.swift; path = Sources/Quick/Hooks/Closures.swift; sourceTree = "<group>"; };
+		AF8ABF221F8371D5003E703E /* Extension+Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+Optional.swift"; path = "UPExtension/Classes/Extension+Optional.swift"; sourceTree = "<group>"; };
 		AFCA3B5B1F78C99E00686B5C /* UPDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UPDefault.swift; path = UPExtension/Classes/UPDefault.swift; sourceTree = "<group>"; };
 		AFCA3B5D1F78C99E00686B5C /* Extension+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+Data.swift"; path = "UPExtension/Classes/Extension+Data.swift"; sourceTree = "<group>"; };
 		AFCA3B5E1F78C99E00686B5C /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+Date.swift"; path = "UPExtension/Classes/Extension+Date.swift"; sourceTree = "<group>"; };
@@ -595,6 +596,7 @@
 				AFCA3B601F78C99E00686B5C /* Extension+String.swift */,
 				AFCA3B611F78C99E00686B5C /* Extension+UIView.swift */,
 				AFCA3B651F78E71A00686B5C /* Extension+CAGradientLayer.swift */,
+				AF8ABF221F8371D5003E703E /* Extension+Optional.swift */,
 				E3907DC21A9CDEE6CE131AFE77F1177E /* Support Files */,
 			);
 			name = UPExtension;

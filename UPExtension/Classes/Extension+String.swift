@@ -6,8 +6,6 @@
 //  Copyright © 2017 Developer. All rights reserved.
 //
 
-import UIKit
-
 //MARK: - String
 public  extension String {
     public subscript (i: Int) -> Character {

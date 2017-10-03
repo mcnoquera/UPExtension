@@ -6,8 +6,6 @@
 //  Copyright © 2017 Developer. All rights reserved.
 //
 
-import UIKit
-
 public class UPDefault: NSObject {
     
     public static let defaults = UserDefaults.standard

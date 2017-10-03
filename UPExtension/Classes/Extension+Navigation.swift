@@ -6,7 +6,6 @@
 //  Copyright © 2017 Developer. All rights reserved.
 //
 
-import UIKit
 
 //MARK: - UINavigationBar
 public extension UINavigationBar {
