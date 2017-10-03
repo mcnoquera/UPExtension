@@ -23,7 +23,7 @@ internal protocol Defaultable {
    static var defaultValue: Self { get }
 }
 
-internal extension Optional where Wrapped: Defaultable {
+extension Optional where Wrapped: Defaultable {
     var unwrappedValue: Wrapped { return self ?? Wrapped.defaultValue }
 }
 
