@@ -18,26 +18,26 @@ public extension Optional {
     }
 }
 
-public protocol Defaultable {
+protocol Defaultable {
     static var defaultValue: Self { get }
 }
 
-public extension Optional where Wrapped: Defaultable {
+extension Optional where Wrapped: Defaultable {
     var unwrappedValue: Wrapped { return self ?? Wrapped.defaultValue }
 }
 
-public extension Int: Defaultable {
+extension Int: Defaultable {
     static var defaultValue: Int { return 0 }
 }
 
-public extension Double: Defaultable {
+extension Double: Defaultable {
     static var defaultValue: Double { return 0 }
 }
 
-public extension String: Defaultable {
+extension String: Defaultable {
     static var defaultValue: String { return "" }
 }
 
-public extension Array: Defaultable {
+extension Array: Defaultable {
     static var defaultValue: Array<Element> { return [] }
 }
