@@ -24,12 +24,16 @@ public extension CAGradientLayer {
     public func createGradientImage() -> UIImage? {
         
         var image: UIImage? = nil
-        UIGraphicsBeginImageContext(bounds.size)
-        if let context = UIGraphicsGetCurrentContext() {
-            render(in: context)
-            image = UIGraphicsGetImageFromCurrentImageContext()
+        autoreleasepool{
+            UIGraphicsBeginImageContext(bounds.size)
+            if let context = UIGraphicsGetCurrentContext() {
+                render(in: context)
+                image = UIGraphicsGetImageFromCurrentImageContext()
+                UIGraphicsEndImageContext()
+            }
+        
         }
-        UIGraphicsEndImageContext()
+        
         return image
     }
 }
