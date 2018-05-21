@@ -22,6 +22,6 @@ public extension UINavigationController {
     public func setNavigationControllerGradientScheme(colors: [UIColor]) {
         self.navigationBar.setGradientBackground(colors: colors)
         self.navigationBar.tintColor = .white
-        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        self.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
     }
 }
